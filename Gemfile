@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 gem 'material_icons'
 
+# Devise for authentication - 04/05/2018 Moacir Petry
+gem 'devise'
+
 group :test do
   gem "factory_bot_rails"
   gem "ffaker"

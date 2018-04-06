@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <%= link_to "Homepage", root_path %>
+
+
+    <% if user_signed_in? %>
+      <ul>
+        <li><%= link_to current_user.email, root_path %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      </ul>
+    <% else %>
+      <ul>
+        <li><%= link_to "User not logged in", root_path %></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
+      </ul>
+    <% end %>
+
+
     <%= yield %>
   </body>
 </html>
