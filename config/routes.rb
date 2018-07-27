@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :positions
   devise_for :users
   root 'homepage#index'
   get 'homepage/index'
