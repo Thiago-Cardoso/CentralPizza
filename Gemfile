@@ -41,7 +41,7 @@ gem 'material_icons'
 gem 'devise'
 
 group :test do
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "ffaker"
   gem 'shoulda-matchers', '~> 3.1'
 end
