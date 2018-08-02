@@ -50,9 +50,9 @@ Migrating to DeviseCreateUsers (20180406022527)
 Started GET "/info/rails/routes" for 192.168.1.108 at 2018-04-06 03:06:50 +0000
 Cannot render console from 192.168.1.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/info/rails/routes"):
-  
+
 actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
@@ -217,9 +217,9 @@ FOREIGN KEY ("position_id")
 Started GET "/" for 192.168.1.105 at 2018-04-13 02:59:57 +0000
 Cannot render console from 192.168.1.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  
+
 SyntaxError (/centralpizza/app/controllers/application_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
-  
+
 app/controllers/application_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
 app/controllers/homepage_controller.rb:1:in `<top (required)>'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
@@ -328,10 +328,10 @@ Unpermitted parameters: position_id, password_confirmation
 Completed 500 Internal Server Error in 534ms (ActiveRecord: 3.1ms)
 
 
-  
+
 NoMethodError (undefined method `position' for #<User:0x00007f10a03edae8>
 Did you mean?  position_id):
-  
+
 activemodel (5.0.6) lib/active_model/attribute_methods.rb:433:in `method_missing'
 activemodel (5.0.6) lib/active_model/validator.rb:149:in `block in validate'
 activemodel (5.0.6) lib/active_model/validator.rb:148:in `each'
@@ -468,10 +468,10 @@ Unpermitted parameters: position_id, password_confirmation
 Completed 500 Internal Server Error in 159ms (ActiveRecord: 3.6ms)
 
 
-  
+
 NoMethodError (undefined method `position' for #<User:0x00007f10a4407778>
 Did you mean?  position_id):
-  
+
 activemodel (5.0.6) lib/active_model/attribute_methods.rb:433:in `method_missing'
 activemodel (5.0.6) lib/active_model/validator.rb:149:in `block in validate'
 activemodel (5.0.6) lib/active_model/validator.rb:148:in `each'
@@ -608,10 +608,10 @@ Unpermitted parameters: position_id, password_confirmation
 Completed 500 Internal Server Error in 170ms (ActiveRecord: 2.7ms)
 
 
-  
+
 NoMethodError (undefined method `position' for #<User:0x00007f109c204258>
 Did you mean?  position_id):
-  
+
 activemodel (5.0.6) lib/active_model/attribute_methods.rb:433:in `method_missing'
 activemodel (5.0.6) lib/active_model/validator.rb:149:in `block in validate'
 activemodel (5.0.6) lib/active_model/validator.rb:148:in `each'
@@ -743,7 +743,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x00007f10a919f378>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -752,8 +752,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb__926323730951754453_69854766534400'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb__926323730951754453_69854766534400'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -791,7 +791,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x00000000035d3b00>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -800,8 +800,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb__926323730951754453_28180060'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb__926323730951754453_28180060'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -820,7 +820,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x00007f10a8fde7f0>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -829,8 +829,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb__926323730951754453_69854765679220'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb__926323730951754453_69854765679220'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -912,7 +912,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x00007f10a4318358>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -921,8 +921,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb__926323730951754453_69854725450760'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb__926323730951754453_69854725450760'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -941,7 +941,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 40ms (ActiveRecord: 3.7ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x00007f10a43e45e8>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -950,8 +950,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb__926323730951754453_69854693197660'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb__926323730951754453_69854693197660'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -971,7 +971,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 105ms (ActiveRecord: 5.3ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x0000000002a486a0>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -980,8 +980,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_20162700'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_20162700'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1000,7 +1000,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x0000000003bdfcd8>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -1009,8 +1009,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_31384340'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_31384340'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1029,7 +1029,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x0000000003ac0f78>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -1038,8 +1038,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_30755380'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_30755380'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1075,7 +1075,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `position' for #<User:0x00000000040da5a8>
 Did you mean?  position_id):
     20: <!-- cutom -->
@@ -1084,8 +1084,8 @@ Did you mean?  position_id):
     23:     <%= f.collection_select :position, Position.all, :id, :name %>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_33768180'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_33768180'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1119,10 +1119,10 @@ Unpermitted parameters: position_id, password_confirmation
 Completed 500 Internal Server Error in 177ms (ActiveRecord: 2.5ms)
 
 
-  
+
 NoMethodError (undefined method `position' for #<User:0x00007fa5940a5488>
 Did you mean?  position_id):
-  
+
 activemodel (5.0.6) lib/active_model/attribute_methods.rb:433:in `method_missing'
 activemodel (5.0.6) lib/active_model/validator.rb:149:in `block in validate'
 activemodel (5.0.6) lib/active_model/validator.rb:148:in `each'
@@ -1259,10 +1259,10 @@ Unpermitted parameters: position_id, password_confirmation
 Completed 500 Internal Server Error in 162ms (ActiveRecord: 2.4ms)
 
 
-  
+
 NoMethodError (undefined method `position' for #<User:0x00007fa591ca4db8>
 Did you mean?  position_id):
-  
+
 activemodel (5.0.6) lib/active_model/attribute_methods.rb:433:in `method_missing'
 activemodel (5.0.6) lib/active_model/validator.rb:149:in `block in validate'
 activemodel (5.0.6) lib/active_model/validator.rb:148:in `each'
@@ -1486,7 +1486,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `map' for nil:NilClass
 Did you mean?  tap):
     20: <!-- cutom -->
@@ -1495,8 +1495,8 @@ Did you mean?  tap):
     23:     <%= f.collection_select :position_id, @positions, :id, :name , prompt: true%>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_33491860'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_33491860'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1515,7 +1515,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `all' for nil:NilClass):
     20: <!-- cutom -->
     21:   <div class="field">
@@ -1523,8 +1523,8 @@ ActionView::Template::Error (undefined method `all' for nil:NilClass):
     23:     <%= f.collection_select :position_id, @positions.all, :id, :name , prompt: true%>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_70174537966580'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_70174537966580'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1543,7 +1543,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `all' for nil:NilClass):
     20: <!-- cutom -->
     21:   <div class="field">
@@ -1551,8 +1551,8 @@ ActionView::Template::Error (undefined method `all' for nil:NilClass):
     23:     <%= f.collection_select :position_id, @positions.all, :id, :name , prompt: true%>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_70174545948180'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_70174545948180'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1571,7 +1571,7 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `positions' for #<#<Class:0x00007fa590d287b8>:0x00007fa59c0dfa90>
 Did you mean?  positions_url):
     20: <!-- cutom -->
@@ -1580,8 +1580,8 @@ Did you mean?  positions_url):
     23:     <%= f.collection_select :position_id, positions.all, :id, :name , prompt: true%>
     24:   </div>
     25: <!-- end cutom -->
-    26: 
-  
+    26:
+
 app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb___1850701167686661813_70174632243960'
 app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb___1850701167686661813_70174632243960'
   Rendering /box/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1729,32 +1729,89 @@ Processing by PositionsController#edit as HTML
   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
 Completed 200 OK in 50ms (Views: 42.0ms | ActiveRecord: 2.1ms)
 
-
-Started DELETE "/users/sign_out" for 192.168.1.109 at 2018-07-27 02:26:57 +0000
-Cannot render console from 192.168.1.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"EN81+rix+W2vRD/zUWpvK6LSxrOckOUmkZ886BnSxKvP6Ib7aubC/w11d9wqZ8YiPZHrimRsg2U63qg2HeHXpg=="}
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
-  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://192.168.1.110:3000/
-Completed 302 Found in 10ms (ActiveRecord: 1.3ms)
-
-
-Started GET "/" for 192.168.1.109 at 2018-07-27 02:26:57 +0000
-Cannot render console from 192.168.1.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 172.21.0.1 at 2018-07-28 13:36:02 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by HomepageController#index as HTML
   Rendering homepage/index.html.erb within layouts/application
-  Rendered homepage/index.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+  Rendered homepage/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 3074ms (Views: 3025.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/users/sign_in" for 192.168.1.108 at 2018-07-27 02:28:02 +0000
-Cannot render console from 192.168.1.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_in" for 172.21.0.1 at 2018-07-28 13:36:08 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by Devise::SessionsController#new as HTML
   Rendering users/sessions/new.html.erb within layouts/application
-  Rendered users/shared/_links.html.erb (1.4ms)
-  Rendered users/sessions/new.html.erb within layouts/application (6.3ms)
-Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+  Rendered users/shared/_links.html.erb (1.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (91.8ms)
+Completed 200 OK in 326ms (Views: 289.6ms | ActiveRecord: 11.3ms)
 
+
+Started GET "/" for 172.21.0.1 at 2018-07-28 16:17:28 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 308ms (Views: 287.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5565628661482832670);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCategoryProducts (20180728223400)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (43.7ms)[0m  [1m[35mCREATE TABLE "category_products" ("id" serial primary key, "name" character varying, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180728223400"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5565628661482832670)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (116.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "centralpizza_development"[0m
+  [1m[35m (113.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "centralpizza_test"[0m
+  [1m[35m (22.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5565628661482832670);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20180406022527)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180406022527"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePositions (20180413022821)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "positions" ("id" serial primary key, "name" character varying, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180413022821"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddFieldsToUser (20180413023121)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "name" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" bigint[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "position_id" integer[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_position_id" ON "users"  ("position_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_2d26d9377b"
+FOREIGN KEY ("position_id")
+  REFERENCES "positions" ("id")
+[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180413023121"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategoryProducts (20180728223400)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "category_products" ("id" serial primary key, "name" character varying, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180728223400"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-28 23:09:39.372719"], ["updated_at", "2018-07-28 23:09:39.372719"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5565628661482832670)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 
