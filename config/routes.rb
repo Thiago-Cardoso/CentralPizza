@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :products
   resources :positions
   devise_for :users
+  resources :category_products
   root 'homepage#index'
   get 'homepage/index'
 
