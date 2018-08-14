@@ -1,0 +1,6 @@
+john:
+  name: John
+  encrypted_password: $2a$11$QPtluOZJ.2GzbqBLzH61NepAbh2zeybDvwFA.2HKWrTQhqaWZnYcK
+  email: john@john.com
+  phone_number: 2853064258
+  position_id: 1
