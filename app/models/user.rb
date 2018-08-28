@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  belongs_to :position
+
   #add in app/models/user.rb
   validates :name, presence: true, uniqueness: true
   validates :phone_number, presence: true, uniqueness: true
