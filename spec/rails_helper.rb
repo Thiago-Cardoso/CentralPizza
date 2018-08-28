@@ -28,6 +28,12 @@ ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
 
+  #configure devise
+  config.include Devise::Test::ControllerHelpers, type: :controller
+
+  #FactoryBot
+  config.include FactoryBot::Syntax::Methods
+
   #Configuring Shoulda Matchers
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|

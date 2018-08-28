@@ -1,4 +1,5 @@
 class CategoryProductsController < ApplicationController
+    before_action :authenticate_user!, except: [:index] #required user logged
     before_action :set_category_product, only: [:show, :edit, :update, :destroy]
   def index
     @category_products = CategoryProduct.all
