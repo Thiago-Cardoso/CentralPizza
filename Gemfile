@@ -43,6 +43,7 @@ gem 'devise'
 group :test do
   gem "factory_bot_rails"
   gem "ffaker"
+  gem 'faker', '~> 1.9', '>= 1.9.1'
   gem 'shoulda-matchers', '~> 3.1'
 end
 
