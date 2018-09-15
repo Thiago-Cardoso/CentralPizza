@@ -1,7 +1,7 @@
 FactoryBot.define do
-    factory :order do
-      total  { Faker::Number.decimal(2) }
-      status  { Faker::Boolean.boolean }
-      table
-    end
+  factory :order do
+    status { Faker::Boolean }
+    total { Faker::Number.decimal(2) }
+    table
   end
+end
