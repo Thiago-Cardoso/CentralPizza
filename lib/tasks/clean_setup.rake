@@ -4,11 +4,11 @@ namespace :clean_setup do
 
     # Cleaning datas
     ## Dependent Models - foreign key
-    User.delete_all
-    Order.delete_all
     Payment.delete_all
     OrderItem.delete_all
     OrderReport.delete_all
+    Order.delete_all
+    User.delete_all
     Product.delete_all
 
     ## Independent Models
