@@ -35,8 +35,11 @@ before(:each) do
       #it is necessary authenticated in devise
       sign_in @user   
       get :show, params: {id: @categoryproduct.id}
-      expect(response).to have_http_status(200)
+      expect(response).to render_template(:show)
     end
+    it 'Route' do
+      is_expected.to route(:get, '/category_products').to(action: :index)
+     end
   end
 end
 
