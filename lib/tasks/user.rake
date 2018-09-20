@@ -10,6 +10,6 @@ namespace :user do
   	  user = "#{name} - #{email}"
   	  puts "Registering user -> #{user}"
       User.create(name: name, email: email, password: password, phone_number: phone_number, position_id: position_id)
-	  end
+	end
   end
 end

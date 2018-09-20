@@ -43,7 +43,6 @@ gem 'devise'
 group :test do
   gem "factory_bot_rails"
   gem "ffaker"
-  gem 'faker', '~> 1.9', '>= 1.9.1'
   gem 'shoulda-matchers', '~> 3.1'
 end
 
@@ -52,6 +51,7 @@ group :development, :test do
    gem 'rspec-rails', '~> 3.5'
    gem 'rails-controller-testing'
    gem 'byebug', platform: :mri
+   gem 'faker', '~> 1.9', '>= 1.9.1'
 end
 
 group :development do
